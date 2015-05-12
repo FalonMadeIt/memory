@@ -6,21 +6,45 @@ body{
 }
 
 /*********** HEADER ***********/
+@font-face {
+  font-family: 'Orbitron';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Orbitron-Light'), local('Orbitron-Regular'), url(http://fonts.gstatic.com/s/orbitron/v6/HmnHiRzvcnQr8CjBje6GQnYhjbSpvc47ee6xR_80Hnw.woff2) format('woff2'), url(http://fonts.gstatic.com/s/orbitron/v6/94ug0rEgQO_WuI_xKJMFc3YhjbSpvc47ee6xR_80Hnw.woff) format('woff');
+}
+
+
 header{
   text-align:center;
   padding-top:1em;
-  padding-bottom:1em;
+  padding-bottom:2em;
 
 }
 h1{
+  font-family: 'Orbitron';
   font-size:100px;
   color:pink;
 }
 .heart{
-  color:fuchsia;
+  font-family: untitled-font-1;
+  color:pink;
+  margin-left:4.5em;
+}
+
+li{
+  display:inline-block;
+  float:left;
+  padding-left:0.3em;
 
 }
 
+.timer{
+  float:right;
+  color:fuchsia;
+  margin-right:7em;
+  color:pink;
+
+}
 /*********** FORM ***********/
 .game-board{
   display:block;
@@ -31,7 +55,6 @@ h1{
   box-sizing:border-box;
   position:relative;
   display:inline-block;
-  border:1px solid black;
   width:16%;
   padding-bottom:16%;
 
@@ -45,17 +68,32 @@ h1{
   bottom:1px;
   border-radius:5%;
   position:absolute;
+  border:1px solid pink;
 }
 input[ type= checkbox]{
-  position:absolute;
+  position:relative;
   z-index:-1;
+
+
+
 }
 
-.icon, .heart{
+.icon{
   font-family: untitled-font-1;
   font-size:80px;
+  margin:0.5em;
 
 }
+
+
+.game-tile input:not(checked) + .game-card .icon{
+  opacity:0;
+}
+
+.game-tile input:checked + .game-card .icon{
+  opacity:1;
+}
+
 
 
 /*********** RESPONSIVE ***********/

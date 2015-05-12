@@ -1,0 +1,65 @@
+@font-face {
+  font-family: 'Orbitron';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Orbitron-Light'), local('Orbitron-Regular'), url(http://fonts.gstatic.com/s/orbitron/v6/HmnHiRzvcnQr8CjBje6GQnYhjbSpvc47ee6xR_80Hnw.woff2) format('woff2'), url(http://fonts.gstatic.com/s/orbitron/v6/94ug0rEgQO_WuI_xKJMFc3YhjbSpvc47ee6xR_80Hnw.woff) format('woff');
+}
+
+a{
+  text-decoration:none;
+  color:pink;
+  
+}
+
+body{
+  background-color:grey;
+  color:pink;
+}
+
+div{
+  display:block;
+  margin:13em auto;
+  width:100%;
+  text-align:center;
+}
+.restart{
+  margin-top:0;
+
+  width:20%;
+  text-align:center;
+}
+
+h1{
+  font-size:45px;
+  font-family: 'Orbitron';
+  font-weight: 400;
+
+}
+
+p{
+
+}
+
+h3{
+  border:white 5px solid;
+  padding:0.2em ;
+  font-size:25px;
+  font-family: 'Orbitron';
+  font-weight: 400;
+
+}
+
+h3:hover{
+  color:white;
+  background-color:pink;
+}
+
+.mode:hover{
+  background-color:#3F51B5;
+
+}
+
+.home{
+  font-size:150px;
+  text-align:center;
+}
